@@ -1,0 +1,36 @@
+<div> 
+  <label>שם פרטי:
+     <br>
+     <input [(ngModel)]="person.firstName" placeholder="שם">
+   </label>
+   <br>
+   <label>שם משפחה:
+       <br>
+       <input [(ngModel)]="person.lastName" placeholder="משפחה">
+   </label>
+   <br>
+   <label>טלפון:
+       <br>
+       <input [(ngModel)]="person.phone" placeholder="טלפון">
+   </label>
+   <br>
+   <label>טלפון נוסף:
+       <br>
+       <input [(ngModel)]="person.phone2" placeholder="טלפון נוסף">
+   </label>
+   <br>
+   <label>נייד:
+       <br>
+       <input [(ngModel)]="person.mobile" placeholder="נייד">
+   </label>
+   <br>
+   <label>דואר אלקטרוני:
+       <br>
+       <input [(ngModel)]="person.email" placeholder="דואר אלקטרוני">
+   </label>
+   <br>
+   <button class="previous" routerLink="/Instructions">הקודם</button>
+   <button class="next" routerLink="/PdfLoader">הבא</button>
+</div>
+
+ 

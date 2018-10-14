@@ -1,0 +1,49 @@
+form {
+    width: 80%;
+    margin: 0 auto;
+    direction: rtl;
+}
+input {
+    width: 450px;
+}
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    /* width: 0%; */
+    /* positions the label text beside the input */
+    text-align: right;
+    margin-bottom: 1%;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 0% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    float: left;
+}
+
+button {
+    direction: rtl;
+    margin-bottom: 5px;    
+position: relative;
+bottom: -30px;
+}
+
+.previous {
+    float: right;
+}
+
+.next {
+    float: left;
+}
+
